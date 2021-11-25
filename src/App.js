@@ -9,6 +9,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 const App = () => {
   const Ner = 'text'
+  const Bir = "chcj"
   return (
       <BrowserRouter>
     <div className='app-wrapper'>
