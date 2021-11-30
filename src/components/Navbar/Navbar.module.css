@@ -1,8 +1,14 @@
 .nav {
     grid-area: n;
-    background-color:slategray;
-    }
+    background-color: rebeccapurple;
+    padding: 20px;
+}
 
-    .item {
-        color: white;
-    }
+.item a {
+    color: black;
+    text-decoration: none;
+}
+
+.item a.active {
+    color: red;
+}
