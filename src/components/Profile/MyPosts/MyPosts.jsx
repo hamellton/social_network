@@ -3,6 +3,7 @@ import Post from './Post/Post';
 import React from "react";
 
 
+
 const MyPosts = (props) => {
     let postsElement = props.posts.map((p, index) => <Post key={`${index}_${p.message}`} message={p.message} likesCount={p.likeCount}/>)
 
@@ -15,8 +16,8 @@ const MyPosts = (props) => {
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        let actione = { type: 'UPDATE-NEW-POST-TEXT', newText: text };
-        props.dispatch(actione);
+        let action = { type: 'UPDATE-NEW-POST-TEXT', newText: text };
+        props.dispatch(action);
     }
 
 
